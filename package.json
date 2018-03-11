@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ertrzyiks/hexo-fontawesome.git"
+    "url": "git+https://github.com/hexojs/hexo-fontawesome.git"
   },
   "peerDependencies": {
     "hexo": "3.x"

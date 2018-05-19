@@ -31,6 +31,8 @@ npm i @fortawesome/fontawesome-free-brands --save
 
 ## Usage
 
+### In theme
+
 This plugin adds a view helpers you can use in the theme to include inline SVG icons 
 from the font-awesome collection.
 
@@ -56,4 +58,42 @@ Possible options:
  
 ```
 <%- fa_inline('twitter', {prefix: 'fab'}) %>
+```
+
+### In post
+
+This plugin adds a tag that you can use in the theme to include inline SVG icons
+from the font-awesome collection.
+
+#### {% fa_css %}
+
+Returns inline styles needed for the inline SVGs.
+
+Example usage:
+
+```
+# My
+## Post
+### Content
+#### Here
+
+{% fa_css %}
+```
+
+#### {% fa_inline iconName [prefix] %}
+
+Returns an SVG markup of the chosen icon.
+`prefix` is the style prefix, `fab` for brands, `fas` for solid etc. Defaults to `fas`
+
+Example usage:
+
+```
+# My
+## Post
+### Content
+{% fa_inline twitter fab %}
+#### Here
+
+
+{% fa_css %}
 ```

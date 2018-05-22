@@ -5,8 +5,8 @@ import {contentFor, mockConfig} from 'hexo-test-utils'
 
 const sandbox = getSandbox()
 
-test('renders svg', async function (t) {
-  const ctx = await sandbox({fixtureName: 'theme'})
+test('renders svg in theme', async function (t) {
+  const ctx = await sandbox({fixtureName: 'fa-inline-theme'})
 
   const Post = ctx.model('Post');
   await Post.insert({source: 'foo', slug: 'foo', icon: 'twitter', prefix: 'fab'})
@@ -20,8 +20,8 @@ test('renders svg', async function (t) {
   t.true(svg.includes('data-prefix="fab"'))
 })
 
-test('renders svg with fas prefix', async function (t) {
-  const ctx = await sandbox({fixtureName: 'theme'})
+test('renders svg with fas prefix in theme', async function (t) {
+  const ctx = await sandbox({fixtureName: 'fa-inline-theme'})
 
   const Post = ctx.model('Post');
   await Post.insert({source: 'foo', slug: 'foo', icon: 'arrow-circle-left', prefix: 'fas'})
@@ -35,8 +35,8 @@ test('renders svg with fas prefix', async function (t) {
   t.true(svg.includes('data-prefix="fas"'))
 })
 
-test('renders svg with fa prefix', async function (t) {
-  const ctx = await sandbox({fixtureName: 'theme'})
+test('renders svg with fa prefix in theme', async function (t) {
+  const ctx = await sandbox({fixtureName: 'fa-inline-theme'})
 
   const Post = ctx.model('Post');
   await Post.insert({source: 'foo', slug: 'foo', icon: 'arrow-circle-left', prefix: 'fa'})
@@ -51,8 +51,8 @@ test('renders svg with fa prefix', async function (t) {
 })
 
 
-test('renders svg', async function (t) {
-  const ctx = await sandbox({fixtureName: 'post'})
+test('renders svg in post', async function (t) {
+  const ctx = await sandbox({fixtureName: 'fa-inline-post'})
 
   await process(ctx)
 
@@ -64,8 +64,8 @@ test('renders svg', async function (t) {
   t.true(svg.includes('data-prefix="fab"'))
 })
 
-test('renders svg with fas prefix', async function (t) {
-  const ctx = await sandbox({fixtureName: 'post'})
+test('renders svg with fas prefix in post', async function (t) {
+  const ctx = await sandbox({fixtureName: 'fa-inline-post'})
 
   await process(ctx)
 
@@ -77,8 +77,8 @@ test('renders svg with fas prefix', async function (t) {
   t.true(svg.includes('data-prefix="fas"'))
 })
 
-test('renders svg with fa prefix', async function (t) {
-  const ctx = await sandbox({fixtureName: 'post'})
+test('renders svg with fa prefix in post', async function (t) {
+  const ctx = await sandbox({fixtureName: 'fa-inline-post'})
 
   await process(ctx)
 

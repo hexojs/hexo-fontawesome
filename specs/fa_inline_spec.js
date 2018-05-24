@@ -1,9 +1,20 @@
 import test from 'ava'
 import getSandbox from './support/sandbox'
-import {process} from 'hexo-test-utils/core'
-import {contentFor, mockConfig} from 'hexo-test-utils'
+import {contentFor, mockConfig, process, init} from 'hexo-test-utils'
 
 const sandbox = getSandbox()
+
+test('renders missing icon in theme', async function (t) {
+  const ctx = await sandbox({fixtureName: 'fa-inline-theme'})
+
+  const Post = ctx.model('Post');
+  await Post.insert({source: 'foo', slug: 'foo', icon: 'not-existing', prefix: 'fab'})
+  await process(ctx)
+
+  const error = await t.throws(contentFor(ctx, '/foo/index.html'))
+
+  t.true(error.message.includes('Can not find icon "not-existing" with prefix "fab"'))
+})
 
 test('renders svg in theme', async function (t) {
   const ctx = await sandbox({fixtureName: 'fa-inline-theme'})
@@ -50,6 +61,15 @@ test('renders svg with fa prefix in theme', async function (t) {
   t.true(svg.includes('data-prefix="fa"'))
 })
 
+test('renders missing icon in post', async function (t) {
+  const ctx = await sandbox({fixtureName: 'fa-inline-post', skipInit: true})
+  mockConfig(ctx, 'source_dir', 'source_alt')
+
+  await init(ctx)
+  const error = await t.throws(process(ctx))
+
+  t.true(error.message.includes('Can not find icon "not-existing" with prefix "fab"'))
+})
 
 test('renders svg in post', async function (t) {
   const ctx = await sandbox({fixtureName: 'fa-inline-post'})

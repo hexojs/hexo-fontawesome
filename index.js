@@ -20,8 +20,11 @@ function faCss() {
 
 function faInline(iconName, opts) {
   var options = opts || {prefix: 'fas'}
-
-  return fontawesome.icon({ prefix: options.prefix, iconName: iconName }).html
+  var icon = fontawesome.icon({ prefix: options.prefix, iconName: iconName })
+  if (!icon) {
+    throw new Error('Can not find icon "' + iconName +'" with prefix "' + options.prefix + '"')
+  }
+  return icon.html
 }
 
 hexo.extend.helper.register('fa_css', faCss)

@@ -11,7 +11,7 @@ test('renders missing icon in theme', async function (t) {
   await Post.insert({source: 'foo', slug: 'foo', icon: 'not-existing', prefix: 'fab'})
   await process(ctx)
 
-  const error = await t.throws(contentFor(ctx, '/foo/index.html'))
+  const error = await t.throwsAsync(() => contentFor(ctx, '/foo/index.html'))
 
   t.true(error.message.includes('Can not find icon "not-existing" with prefix "fab"'))
 })
@@ -66,7 +66,7 @@ test('renders missing icon in post', async function (t) {
   mockConfig(ctx, 'source_dir', 'source_alt')
 
   await init(ctx)
-  const error = await t.throws(process(ctx))
+  const error = await t.throwsAsync(() => process(ctx))
 
   t.true(error.message.includes('Can not find icon "not-existing" with prefix "fab"'))
 })

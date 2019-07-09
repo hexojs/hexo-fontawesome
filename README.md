@@ -5,12 +5,16 @@ A utility function which helps to inline fontawesome SVG files.
 
 ## Installation
 
+### Requirements
+
+ - NodeJS at least 6.x
+
 ### Easy way
 
 Install this plugin and all free font-awesome styles:
- 
+
 ```
-npm i hexo-fontawesome --save
+npm install hexo-fontawesome --save
 ```
 
 ### Advanced way
@@ -18,22 +22,45 @@ npm i hexo-fontawesome --save
 Install just a plugin:
 
 ```
-npm i hexo-fontawesome --no-optional --save
+npm install hexo-fontawesome --no-optional --save
 ```
 
 Then you need to manually install all needed styles:
 
 ```
-npm i @fortawesome/fontawesome-free-solid --save
-npm i @fortawesome/fontawesome-free-regular --save
-npm i @fortawesome/fontawesome-free-brands --save
+npm install @fortawesome/free-solid-svg-icons --save
+npm install @fortawesome/free-regular-svg-icons --save
+npm install @fortawesome/free-brands-svg-icons --save
+```
+
+### Difference between version 2.x and 1.x
+
+Font Awesome change package names in 5.1
+https://github.com/FortAwesome/Font-Awesome/blob/master/UPGRADING.md#50x-to-510
+
+It's significant change enough for `hexo-fontawesome` to bump major version here.
+
+#### How to migrate from 1.x to 2.x
+
+1. Uninstall icon packages if you did it manually:
+```
+npm uninstall @fortawesome/fontawesome-free-solid
+npm uninstall @fortawesome/fontawesome-free-regular
+npm uninstall @fortawesome/fontawesome-free-brands
+```
+
+2. Install their 5.1+ alternatives
+```
+npm install @fortawesome/free-solid-svg-icons --save
+npm install @fortawesome/free-regular-svg-icons --save
+npm install @fortawesome/free-brands-svg-icons --save
 ```
 
 ## Usage
 
 ### In theme
 
-This plugin adds a view helpers you can use in the theme to include inline SVG icons 
+This plugin adds a view helpers you can use in the theme to include inline SVG icons
 from the font-awesome collection.
 
 #### fa_css()
@@ -51,11 +78,11 @@ Example usage:
 #### fa_inline(iconName, options)
 
 Returns an SVG markup of the chosen icon.
-  
+
 Possible options:
 
  - `prefix` - the style prefix, `fab` for brands, `fas` for solid etc. Defaults to `fas`
- 
+
 ```
 <%- fa_inline('twitter', {prefix: 'fab'}) %>
 ```

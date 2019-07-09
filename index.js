@@ -1,28 +1,36 @@
-var fontawesome = require('@fortawesome/fontawesome');
+const { library, dom, icon: getIcon } = require('@fortawesome/fontawesome-svg-core')
 
 function tryInstall(block) {
   try {
-    var icons = block().default
-    fontawesome.library.add(icons)
+    var icons = block()
+    library.add(icons)
     return true
   } catch(ex) {
     return false
   }
 }
 
-tryInstall(function () { return require('@fortawesome/fontawesome-free-solid') })
-tryInstall(function () { return require('@fortawesome/fontawesome-free-regular') })
-tryInstall(function () { return require('@fortawesome/fontawesome-free-brands') })
+tryInstall(function () { return require('@fortawesome/free-solid-svg-icons').fas })
+tryInstall(function () { return require('@fortawesome/free-regular-svg-icons').far })
+tryInstall(function () { return require('@fortawesome/free-brands-svg-icons').fab })
 
 function faCss() {
-  return fontawesome.dom.css()
+  return dom.css()
 }
 
 function faInline(iconName, opts) {
   var options = opts || {prefix: 'fas'}
-  var icon = fontawesome.icon({ prefix: options.prefix, iconName: iconName })
+  var prefix = options.prefix
+
+  var icon = getIcon({ prefix: prefix, iconName: iconName })
   if (!icon) {
-    throw new Error('Can not find icon "' + iconName +'" with prefix "' + options.prefix + '"')
+    throw new Error(
+      'Can not find icon "' + iconName +'" with prefix "' + prefix + '"' +
+      'Make sure you have installed also a corresponding icons package:\n' +
+      ' - @fortawesome/free-solid-svg-icons for fas prefix \n' +
+      ' - @fortawesome/free-regular-svg-icons for far prefix\n' +
+      ' - @fortawesome/free-brands-svg-icons for fab prefix\n'
+    )
   }
   return icon.html
 }

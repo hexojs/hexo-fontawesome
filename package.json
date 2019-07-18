@@ -1,6 +1,6 @@
 {
   "name": "hexo-fontawesome",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "A utility function which helps to inline fontawesome SVG files.",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,9 @@
     "hexo": "3.x"
   },
   "optionalDependencies": {
-    "@fortawesome/fontawesome-free-solid": "5.x",
-    "@fortawesome/fontawesome-free-regular": "5.x",
-    "@fortawesome/fontawesome-free-brands": "5.x"
+    "@fortawesome/free-brands-svg-icons": "^5.9",
+    "@fortawesome/free-regular-svg-icons": "^5.9",
+    "@fortawesome/free-solid-svg-icons": "^5.9"
   },
   "keywords": [
     "hexo",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/ertrzyiks/hexo-fontawesome#readme",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.8"
+    "@fortawesome/fontawesome-svg-core": "^1.2.19"
   },
   "devDependencies": {
     "ava": "^2.1.0",

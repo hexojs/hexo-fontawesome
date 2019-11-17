@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [2.1.0]
+- Support Hexo 4
+
 ## [2.0.0]
 ### Updated
 - Migrate to fontawesome 5.1+

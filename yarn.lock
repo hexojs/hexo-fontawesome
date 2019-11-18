@@ -1769,9 +1769,9 @@ hexo-renderer-markdown-it@^3.4.1:
     markdown-it-sup "^1.0.0"
     sluggo "^0.2.0"
 
-hexo-test-utils@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/hexo-test-utils/-/hexo-test-utils-0.3.1.tgz#84413aa98063c8e6c46e09953c1596164074025b"
+hexo-test-utils@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/hexo-test-utils/-/hexo-test-utils-0.4.1.tgz#7d3359c2e1cf8775f1d72ce6f8ef7fed2a8d4080"
   dependencies:
     bluebird "^3.5.1"
     stream-to-promise "^2.2.0"

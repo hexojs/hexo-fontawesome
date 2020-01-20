@@ -4,7 +4,13 @@
   "description": "A utility function which helps to inline fontawesome SVG files.",
   "main": "index.js",
   "scripts": {
-    "test": "ava specs/*_spec.js"
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "specs/*_spec.js"
+    ],
+    "babel": true
   },
   "repository": {
     "type": "git",
@@ -32,7 +38,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.19"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
+    "@ava/babel": "^1.0.0",
+    "ava": "^3.0.0",
     "hexo": "^4.0.0",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-markdown-it": "^4.0.0",

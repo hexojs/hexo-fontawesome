@@ -1,6 +1,6 @@
 {
   "name": "hexo-fontawesome",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A utility function which helps to inline fontawesome SVG files.",
   "main": "index.js",
   "scripts": {

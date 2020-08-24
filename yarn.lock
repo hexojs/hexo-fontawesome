@@ -1453,10 +1453,10 @@ hexo-util@^1.7.0:
     strip-indent "^3.0.0"
     striptags "^3.1.1"
 
-hexo-util@^2.0.0, hexo-util@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.2.0.tgz#5372864457d716c3f4553babf22e6da51690806a"
-  integrity sha512-ERYPhehtWKYo2Wkf2e11iwub10rxHvCdJt4FNnBzjuUV7MEfSphpFNXJ3yyBAQgHPr7ce9ZPb7SEbMdyZL159w==
+hexo-util@^2.0.0, hexo-util@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.4.0.tgz#f5c0099a0a1718b3ad27061e5e4d1fb9eb7f2b41"
+  integrity sha512-IPQvAyn0cznYMU2gskMiZ6LZEvN7wHNusrJoYxrir4f7S7POpZeDTBswiko9R1qqd+/hu07wUYZdm4ceTTCEaA==
   dependencies:
     bluebird "^3.5.2"
     camel-case "^4.0.0"
@@ -1469,9 +1469,9 @@ hexo-util@^2.0.0, hexo-util@^2.2.0:
     striptags "^3.1.1"
 
 hexo@^5.0.0:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/hexo/-/hexo-5.0.2.tgz#b7c593b26044ce2b7e0265a706218a7aba0b0070"
-  integrity sha512-4tbZqBJHL6QfCLelz+rZjGipVBqQ0TXISi6bjJQpHQuWQtwmMgehVMH8na66y4P4fSRRP17JwReo38oIZ3EINQ==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/hexo/-/hexo-5.1.1.tgz#5cbd979acce5d3915919688d8d6a8c3de3e93fda"
+  integrity sha512-D+kf3NJ0WTBwyrEZdcgjsVVsSG4/cnKmixbsnCr1dPwI6d7BBJtFprv7usU7u3sV59+LrOYtPuJKsHaaINffvA==
   dependencies:
     abbrev "^1.1.1"
     archy "^1.0.0"
@@ -1482,7 +1482,7 @@ hexo@^5.0.0:
     hexo-fs "^3.1.0"
     hexo-i18n "^1.0.0"
     hexo-log "^2.0.0"
-    hexo-util "^2.2.0"
+    hexo-util "^2.4.0"
     js-yaml "^3.12.0"
     micromatch "^4.0.2"
     moment "^2.22.2"

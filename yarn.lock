@@ -1352,16 +1352,16 @@ hexo-renderer-ejs@^1.0.0:
   dependencies:
     ejs "^2.6.1"
 
-hexo-renderer-markdown-it@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/hexo-renderer-markdown-it/-/hexo-renderer-markdown-it-4.1.0.tgz#bfac6ad38afb2f21364699089515a33fd6f10c48"
-  integrity sha512-554Jpkn3HWsugstPSwtkFUDu70wMhvQQPf3HtPHLk7jII+tu68W/GVlHoPZGg8LyRhNCvQBjFv+DsYr1Cuxvyg==
+hexo-renderer-markdown-it@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/hexo-renderer-markdown-it/-/hexo-renderer-markdown-it-5.0.0.tgz#bbc270a3154ed8b7c464573617ca35f35b4ff966"
+  integrity sha512-9A4Dpy80hk7+SQ3RGqpWCV1LxnV1gjHSj4N0oGmXIfl/yjy+jMKLRAXIDVonxaD72rg4kzW4ZSqYZBIcgxTAeg==
   dependencies:
-    hexo-util "^1.7.0"
-    markdown-it "^10.0.0"
+    hexo-util "^2.1.0"
+    markdown-it "^11.0.0"
     markdown-it-abbr "^1.0.4"
     markdown-it-cjk-breaks "^1.1.2"
-    markdown-it-container "^2.0.0"
+    markdown-it-container "^3.0.0"
     markdown-it-deflist "^2.0.3"
     markdown-it-emoji "^1.4.0"
     markdown-it-footnote "^3.0.1"
@@ -1377,23 +1377,7 @@ hexo-test-utils@^0.4.1:
     bluebird "^3.5.1"
     stream-to-promise "^2.2.0"
 
-hexo-util@^1.7.0:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-1.9.1.tgz#15dc10d0dca474c978cdba9c20e8d0417ac993de"
-  integrity sha512-B6+nVi4Zpy7NPzlIcTLn9YBGb2Ly0q11mRzg6DyFWg0IfcrfF4tlWO0vRXqJVhvRyg+tIfUihmgypkiUW1IjNQ==
-  dependencies:
-    bluebird "^3.5.2"
-    camel-case "^4.0.0"
-    cross-spawn "^7.0.0"
-    deepmerge "^4.2.2"
-    highlight.js "^9.13.1"
-    htmlparser2 "^4.0.0"
-    prismjs "^1.17.1"
-    punycode.js "^2.1.0"
-    strip-indent "^3.0.0"
-    striptags "^3.1.1"
-
-hexo-util@^2.0.0, hexo-util@^2.4.0:
+hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.4.0.tgz#f5c0099a0a1718b3ad27061e5e4d1fb9eb7f2b41"
   integrity sha512-IPQvAyn0cznYMU2gskMiZ6LZEvN7wHNusrJoYxrir4f7S7POpZeDTBswiko9R1qqd+/hu07wUYZdm4ceTTCEaA==
@@ -1440,10 +1424,6 @@ highlight.js@^10.0.0:
   version "10.1.2"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.1.2.tgz#c20db951ba1c22c055010648dfffd7b2a968e00c"
   integrity sha512-Q39v/Mn5mfBlMff9r+zzA+gWxRsCRKwEMvYTiisLr/XUiFI/4puWt0Ojdko3R3JCNWGdOWaA5g/Yxqa23kC5AA==
-
-highlight.js@^9.13.1:
-  version "9.16.2"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.16.2.tgz#68368d039ffe1c6211bcc07e483daf95de3e403e"
 
 hosted-git-info@^2.1.4:
   version "2.7.1"
@@ -1709,9 +1689,10 @@ lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
 
-linkify-it@^2.0.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/linkify-it/-/linkify-it-2.2.0.tgz#e3b54697e78bf915c70a38acd78fd09e0058b1cf"
+linkify-it@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/linkify-it/-/linkify-it-3.0.2.tgz#f55eeb8bc1d3ae754049e124ab3bb56d97797fb8"
+  integrity sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ==
   dependencies:
     uc.micro "^1.0.1"
 
@@ -1803,9 +1784,10 @@ markdown-it-cjk-breaks@^1.1.2:
   dependencies:
     eastasianwidth "~0.2.0"
 
-markdown-it-container@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/markdown-it-container/-/markdown-it-container-2.0.0.tgz#0019b43fd02eefece2f1960a2895fba81a404695"
+markdown-it-container@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-container/-/markdown-it-container-3.0.0.tgz#1d19b06040a020f9a827577bb7dbf67aa5de9a5b"
+  integrity sha512-y6oKTq4BB9OQuY/KLfk/O3ysFhB3IMYoIWhGJEidXt1NQFocFK2sA2t0NYZAMyMShAGL6x5OPIbrmXPIqaN9rw==
 
 markdown-it-deflist@^2.0.3:
   version "2.0.3"
@@ -1835,13 +1817,14 @@ markdown-it-sup@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-sup/-/markdown-it-sup-1.0.0.tgz#cb9c9ff91a5255ac08f3fd3d63286e15df0a1fc3"
 
-markdown-it@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-10.0.0.tgz#abfc64f141b1722d663402044e43927f1f50a8dc"
+markdown-it@^11.0.0:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-11.0.1.tgz#b54f15ec2a2193efa66dda1eb4173baea08993d6"
+  integrity sha512-aU1TzmBKcWNNYvH9pjq6u92BML+Hz3h5S/QpfTFwiQF852pLT+9qHsrhM9JYipkOXZxGn+sGH8oyJE9FD9WezQ==
   dependencies:
     argparse "^1.0.7"
     entities "~2.0.0"
-    linkify-it "^2.0.0"
+    linkify-it "^3.0.1"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
@@ -2213,10 +2196,6 @@ pump@^3.0.0:
   dependencies:
     end-of-stream "^1.1.0"
     once "^1.3.1"
-
-punycode.js@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/punycode.js/-/punycode.js-2.1.0.tgz#f3937f7a914152c2dc17e9c280a2cf86a26b7cda"
 
 pupa@^2.0.1:
   version "2.0.1"

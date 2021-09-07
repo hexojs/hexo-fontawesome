@@ -38,7 +38,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.19"
   },
   "devDependencies": {
-    "@ava/babel": "^1.0.0",
+    "@ava/babel": "^2.0.0",
     "ava": "^3.0.0",
     "hexo": "^5.0.0",
     "hexo-renderer-ejs": "^1.0.0",

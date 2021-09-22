@@ -4,18 +4,3 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-  open-pull-requests-limit: 20
-  ignore:
-  - dependency-name: "@fortawesome/free-solid-svg-icons"
-    versions:
-    - 5.15.2
-    - 5.15.3
-  - dependency-name: "@fortawesome/free-brands-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/free-regular-svg-icons"
-    versions:
-    - 5.15.2
-  - dependency-name: "@fortawesome/fontawesome-svg-core"
-    versions:
-    - 1.2.34

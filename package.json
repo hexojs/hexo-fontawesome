@@ -20,9 +20,9 @@
     "hexo": "3.x || 4.x || 5.x"
   },
   "optionalDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.9",
-    "@fortawesome/free-regular-svg-icons": "^5.9",
-    "@fortawesome/free-solid-svg-icons": "^5.9"
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4"
   },
   "keywords": [
     "hexo",
@@ -35,12 +35,12 @@
   },
   "homepage": "https://github.com/hexojs/hexo-fontawesome#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.19"
+    "@fortawesome/fontawesome-svg-core": "^1.2.36"
   },
   "devDependencies": {
     "@ava/babel": "^2.0.0",
-    "ava": "^3.0.0",
-    "hexo": "^5.0.0",
+    "ava": "^3.15.0",
+    "hexo": "^5.4.0",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-markdown-it": "^5.0.0",
     "hexo-test-utils": "^0.4.1"

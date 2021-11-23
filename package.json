@@ -4,7 +4,9 @@
   "description": "A utility function which helps to inline fontawesome SVG files.",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "test-cov": "nyc --reporter=lcovonly yarn test",
+    "eslint": "eslint"
   },
   "ava": {
     "files": [
@@ -40,9 +42,11 @@
   "devDependencies": {
     "@ava/babel": "^2.0.0",
     "ava": "^3.15.0",
+    "eslint": "^8.3.0",
     "hexo": "^5.4.0",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-markdown-it": "^5.0.0",
-    "hexo-test-utils": "^0.4.1"
+    "hexo-test-utils": "^0.5.0",
+    "nyc": "^15.1.0"
   }
 }

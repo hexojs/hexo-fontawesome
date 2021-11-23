@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "test-cov": "nyc --reporter=lcovonly yarn test",
-    "eslint": "eslint"
+    "test-cov": "nyc --reporter=lcovonly yarn test"
   },
   "ava": {
     "files": [

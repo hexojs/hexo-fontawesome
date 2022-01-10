@@ -7,12 +7,6 @@
     "test": "ava",
     "test-cov": "nyc --reporter=lcovonly yarn test"
   },
-  "ava": {
-    "files": [
-      "specs/*_spec.js"
-    ],
-    "babel": true
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hexojs/hexo-fontawesome.git"
@@ -39,8 +33,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36"
   },
   "devDependencies": {
-    "@ava/babel": "^2.0.0",
-    "ava": "^3.15.0",
+    "ava": "^4.0.1",
     "eslint": "^8.6.0",
     "hexo": "^6.0.0",
     "hexo-renderer-ejs": "^2.0.0",

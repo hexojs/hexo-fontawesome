@@ -1,7 +1,7 @@
-import test from 'ava'
-import getSandbox from './support/sandbox'
-import {process} from 'hexo-test-utils/core'
-import {contentFor, mockConfig} from 'hexo-test-utils'
+const test = require('ava')
+const getSandbox = require('./support/sandbox')
+const {process} = require('hexo-test-utils/core')
+const {contentFor, mockConfig} = require('hexo-test-utils')
 
 const sandbox = getSandbox()
 

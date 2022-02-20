@@ -1,3 +1,5 @@
 specs
 .travis.yml
 .idea
+.github
+ava.config.js

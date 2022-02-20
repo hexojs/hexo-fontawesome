@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+- Support Hexo 6
 
 ## [2.2.1]
 - Remove .idea files from the package

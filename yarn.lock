@@ -1412,9 +1412,9 @@ hexo-renderer-ejs@^2.0.0:
     ejs "^3.1.6"
 
 hexo-renderer-markdown-it@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-renderer-markdown-it/-/hexo-renderer-markdown-it-6.0.0.tgz#874813d2d815a43c34b41845d545e68482db8755"
-  integrity sha512-K844tZbOeQX0EWGqa2fCd0pyi779Jevh27BKKWhr6vNAMFzFNOlgZbuBzQxghSTEgSSQ8cMTVTJ+Regl7PxjNA==
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/hexo-renderer-markdown-it/-/hexo-renderer-markdown-it-6.0.1.tgz#56a9496d1a3ccfb8f4665ca0f808239f73dd1d5f"
+  integrity sha512-+fZA4+mkEUTDm28IO968lqbFSEiqv2H/8SujOuVHo9FZhVbX5Hexnt0AvxkaFe0g+9/nMNJ5qsuncGTOTNFqSg==
   dependencies:
     hexo-util "^2.1.0"
     markdown-it "^12.0.0"

@@ -17,7 +17,7 @@
   "optionalDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4"
+    "@fortawesome/free-solid-svg-icons": "^6.2.1"
   },
   "keywords": [
     "hexo",

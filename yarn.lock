@@ -1443,13 +1443,14 @@ hexo-renderer-ejs@^2.0.0:
     ejs "^3.1.6"
 
 hexo-renderer-markdown-it@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/hexo-renderer-markdown-it/-/hexo-renderer-markdown-it-6.0.1.tgz#56a9496d1a3ccfb8f4665ca0f808239f73dd1d5f"
-  integrity sha512-+fZA4+mkEUTDm28IO968lqbFSEiqv2H/8SujOuVHo9FZhVbX5Hexnt0AvxkaFe0g+9/nMNJ5qsuncGTOTNFqSg==
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/hexo-renderer-markdown-it/-/hexo-renderer-markdown-it-6.1.0.tgz#bdd8a1b416de8ad15dc93709344c4ed8cdfc664f"
+  integrity sha512-bsAXHF761Nkpl5966UIEM6YXrCpk+yoRMTQ/tSkSLjxel8oK6+GABBb7H0Md4wzuCm476KJ+6NXolAIHlhDVbw==
   dependencies:
     hexo-util "^2.1.0"
     markdown-it "^12.0.0"
     markdown-it-abbr "^1.0.4"
+    markdown-it-attrs "^4.1.3"
     markdown-it-cjk-breaks "^1.1.2"
     markdown-it-container "^3.0.0"
     markdown-it-deflist "^2.0.3"
@@ -1897,6 +1898,11 @@ markdown-it-abbr@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/markdown-it-abbr/-/markdown-it-abbr-1.0.4.tgz#d66b5364521cbb3dd8aa59dadfba2fb6865c8fd8"
   integrity sha1-1mtTZFIcuz3Yqlna37ovtoZcj9g=
+
+markdown-it-attrs@^4.1.3:
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/markdown-it-attrs/-/markdown-it-attrs-4.1.6.tgz#2bc331c7649d8c6396a0613c2bba1093f3e64da9"
+  integrity sha512-O7PDKZlN8RFMyDX13JnctQompwrrILuz2y43pW2GagcwpIIElkAdfeek+erHfxUOlXWPsjFeWmZ8ch1xtRLWpA==
 
 markdown-it-cjk-breaks@^1.1.2:
   version "1.1.3"

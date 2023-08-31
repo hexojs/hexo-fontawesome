@@ -8,11 +8,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js 14.x
-        uses: actions/setup-node@v3.6.0
+        uses: actions/setup-node@v3
         with:
           node-version: '14.x'
       - name: Cache NPM dependencies
-        uses: actions/cache@v3.2.1
+        uses: actions/cache@v3
         with:
           path: node_modules
           key: ${{ runner.OS }}-npm-cache

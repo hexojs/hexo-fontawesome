@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/hexojs/hexo-fontawesome#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36"
+    "@fortawesome/fontawesome-svg-core": "^6.4.2"
   },
   "devDependencies": {
     "ava": "^4.0.1",

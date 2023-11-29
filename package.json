@@ -15,7 +15,7 @@
     "hexo": "3.x || 4.x || 5.x || 6.x"
   },
   "optionalDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-brands-svg-icons": "^6.5.0",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4"
   },

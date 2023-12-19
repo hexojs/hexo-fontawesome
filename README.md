@@ -1,13 +1,13 @@
 # hexo-fontawesome
+
 A plugin for static pages generator [Hexo](https://github.com/hexojs/hexo).
 A utility function which helps to inline fontawesome SVG files.
-
 
 ## Installation
 
 ### Requirements
 
- - NodeJS at least 6.x
+- NodeJS at least 16.x
 
 ### Easy way
 
@@ -43,6 +43,7 @@ It's significant change enough for `hexo-fontawesome` to bump major version here
 #### How to migrate from 1.x to 2.x
 
 1. Uninstall icon packages if you did it manually:
+
 ```
 npm uninstall @fortawesome/fontawesome-free-solid
 npm uninstall @fortawesome/fontawesome-free-regular
@@ -50,6 +51,7 @@ npm uninstall @fortawesome/fontawesome-free-brands
 ```
 
 2. Install their 5.1+ alternatives
+
 ```
 npm install @fortawesome/free-solid-svg-icons --save
 npm install @fortawesome/free-regular-svg-icons --save
@@ -81,7 +83,7 @@ Returns an SVG markup of the chosen icon.
 
 Possible options:
 
- - `prefix` - the style prefix, `fab` for brands, `fas` for solid etc. Defaults to `fas`
+- `prefix` - the style prefix, `fab` for brands, `fas` for solid etc. Defaults to `fas`
 
 ```
 <%- fa_inline('twitter', {prefix: 'fab'}) %>

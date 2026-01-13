@@ -9,7 +9,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
         node-version: ["16.x", "18.x"]
-        HEXO_VERSION: ["3.x", "4.x", "5.x", "6.x", "7.x"]
+        HEXO_VERSION: ["3.x", "4.x", "5.x", "6.x", "7.x", "8.x"]
 
       fail-fast: false
     steps:

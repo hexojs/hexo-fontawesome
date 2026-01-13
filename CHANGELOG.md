@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+- Support Hexo 8
+
 ## [2.4.0]
 
 - Support Hexo 7

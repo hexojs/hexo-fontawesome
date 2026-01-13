@@ -3,7 +3,7 @@ const { library, dom, icon: getIcon } = require('@fortawesome/fontawesome-svg-co
 function tryInstall(block) {
   try {
     var icons = block()
-    library.add(icons)
+    library.add(...Object.values(icons));
     return true
   } catch(ex) {
     return false

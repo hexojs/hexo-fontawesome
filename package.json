@@ -12,7 +12,7 @@
     "url": "git+https://github.com/hexojs/hexo-fontawesome.git"
   },
   "peerDependencies": {
-    "hexo": "3.x || 4.x || 5.x || 6.x || 7.x"
+    "hexo": "3.x || 4.x || 5.x || 6.x || 7.x || 8.x"
   },
   "optionalDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.4",

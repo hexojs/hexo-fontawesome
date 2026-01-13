@@ -7,9 +7,52 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-        node-version: ["16.x", "18.x"]
-        HEXO_VERSION: ["3.x", "4.x", "5.x", "6.x", "7.x", "8.x"]
+        include:
+          # Node 16.x - Hexo 3.x to 5.x
+          - os: ubuntu-latest
+            node-version: "16.x"
+            HEXO_VERSION: "3.x"
+          - os: ubuntu-latest
+            node-version: "16.x"
+            HEXO_VERSION: "4.x"
+          - os: ubuntu-latest
+            node-version: "16.x"
+            HEXO_VERSION: "5.x"
+          - os: windows-latest
+            node-version: "16.x"
+            HEXO_VERSION: "4.x"
+          - os: macos-latest
+            node-version: "16.x"
+            HEXO_VERSION: "4.x"
+          # Node 18.x - Hexo 5.x to 7.x
+          - os: ubuntu-latest
+            node-version: "18.x"
+            HEXO_VERSION: "5.x"
+          - os: ubuntu-latest
+            node-version: "18.x"
+            HEXO_VERSION: "6.x"
+          - os: ubuntu-latest
+            node-version: "18.x"
+            HEXO_VERSION: "7.x"
+          - os: windows-latest
+            node-version: "18.x"
+            HEXO_VERSION: "6.x"
+          - os: macos-latest
+            node-version: "18.x"
+            HEXO_VERSION: "6.x"
+          # Node 20.x - Hexo 7.x to 8.x
+          - os: ubuntu-latest
+            node-version: "20.x"
+            HEXO_VERSION: "7.x"
+          - os: ubuntu-latest
+            node-version: "20.x"
+            HEXO_VERSION: "8.x"
+          - os: windows-latest
+            node-version: "20.x"
+            HEXO_VERSION: "8.x"
+          - os: macos-latest
+            node-version: "20.x"
+            HEXO_VERSION: "8.x"
 
       fail-fast: false
     steps:
